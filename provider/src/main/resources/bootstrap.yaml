@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    discovery:
+      enabled: true
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        tags: ['version=0.0.1-SNAPSHOT']
+        prefer-ip-address: true
